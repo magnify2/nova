@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #ebedff, #cbd5ff);
+    color: #0e0e2c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navegador {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    background: #ffffff8d;
+    border-radius: 50px;
+    margin: 20px auto;
+    padding: 10px 40px;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    margin: 0 15px;
+    border-radius: 30px;
+}
+
+.item a {
+    text-decoration: none;
+    padding: 12px 20px;
+    color: black;
+    transition: color 0.3s;
+    display: block;
+}
+
+.item:hover {
+    background-color: rgba(0, 4, 255, 0.3);
+}
+
+.item:hover a {
+    color: white;
+}
+
+.item.active {
+    background-color: rgba(0, 4, 255, 0.3);
+}
+
+.item.active a {
+    color: white;
+}
+
+.signup-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.signup-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 50px 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.signup-box h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.signup-box p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-signup input {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form-signup button {
+    padding: 15px;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-signup button:hover {
+    background-color: #0055cc;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
